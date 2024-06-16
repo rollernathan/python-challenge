@@ -83,7 +83,7 @@ with open(csvpath) as csvfile:
     print(f'Greatest Decrease in Profits: {months[greatest_decrease_index]} (${greatest_decrease})\n')
 
 # Specify the file to write to
-output_path = os.path.join('Output', 'budget_data.txt')
+output_path = os.path.join('analysis', 'financial_analysis.txt')
 
 # Open the file using "write" mode. Specify the variable to hold the contents
 with open(output_path, 'w') as file:
@@ -99,4 +99,4 @@ with open(output_path, 'w') as file:
     file.close()
 
 # Notify the user the results have been written to the output file.
-print("Financial Analysis Results have been written to 'Output\\budget_data.txt'.\n")
+print("Financial Analysis Results have been written to 'analysis\\financial_analysis.txt'.\n")
